@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241,0.2);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgb(129, 243, 222);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(60, 113, 104);
+}
