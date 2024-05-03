@@ -6,6 +6,7 @@ import { supabase } from '@/app/supabase.config'
 import { Badge, Spinner } from '@chakra-ui/react'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Comments from '@/app/components/comments'
 
 export default function page({ params }) {
   const [blogPost, setBlogPost] = useState([])
@@ -72,6 +73,10 @@ export default function page({ params }) {
             </div>
           </section>
         ))}
+        <h1 className="font-bold text-4xl text-center mb-4 content-center">
+          Comments
+        </h1>
+        <Comments />
       </section>
       <Footer />
     </main>
